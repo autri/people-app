@@ -1,0 +1,9 @@
+<div>
+    <h1>Random People!</h1>
+    <hr/>
+    <div class="row">
+        <div *ngFor="let person of people; let i = index" class="col-md-5">
+            <app-people-thumbnail [person]="person"></app-people-thumbnail>
+        </div>
+    </div>
+</div>

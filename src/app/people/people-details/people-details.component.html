@@ -1,0 +1,24 @@
+<div class="container">
+    <img class="person-image" [src]="person?.picture.large" [alt]="person?.name.last">
+
+    <div class="row">
+        <div class="col-md-11">
+        <h2>{{person?.name.first}} {{person?.name.last}}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+        <div><strong>Email:</strong> {{person?.email}}</div>
+        <div><strong>Phone:</strong> {{person?.phone}}</div>
+        <div><strong>Age:</strong> {{person?.dob.age}}</div>
+        </div>
+        <div class="col-md-6">
+        <address>
+            <strong>Address:</strong><br />
+            {{person?.location?.street.number}} {{person?.location?.street.name}}<br />
+            {{person?.location?.city}}, {{person?.location?.state}}
+        </address>
+        </div>
+    </div>
+</div>

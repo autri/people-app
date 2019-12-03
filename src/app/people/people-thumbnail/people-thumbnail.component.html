@@ -1,0 +1,10 @@
+<div [routerLink]="['/people', i]" class="well hoverwell thumbnail">
+    <h2>{{person?.name.first}} {{person?.name.last}}</h2>
+    <div>Email: {{person?.email}}</div>
+    <div>Phone: {{person?.phone}}</div>
+    <div>Age {{person?.dob.age}}</div>
+    <div>
+        <span>Location: {{person?.location?.street.number}} {{person?.location?.street.name}}</span>
+        <span class="pad-left">{{person?.location?.city}}, {{person?.location?.state}}</span>
+    </div>
+</div>
